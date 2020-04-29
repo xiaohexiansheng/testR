@@ -1,6 +1,7 @@
 <template>
 	<div class="dragbox">
 		<p @click="goTsetDev">我是一个testdev</p>
+		<div style="color: #000;">111122</div>
 	</div>
 </template>
 
