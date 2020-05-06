@@ -1,6 +1,6 @@
 <template>
 	<div class="dragbox">
-		<p @click="goTsetDev">我是testdev</p>
+		<p @click="goTsetDev">我是一个testdev11111111222222222222221</p>
 	</div>
 </template>
 
