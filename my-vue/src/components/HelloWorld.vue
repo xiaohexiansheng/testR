@@ -1,6 +1,8 @@
 <template>
 	<div class="dragbox">
-		<p @click="goTsetDev">我是一个testdev11111111222222222222221</p>
+		<input type="text"v-model="firesName" />
+		<input type="text"v-model="secondName"  />
+		<p>{{fullName}}</p>
 	</div>
 </template>
 
@@ -8,27 +10,25 @@
 	export default {
 		data() {
 			return {
-
+				firesName:1,
+				secondName:2
 			}
 		},
 		methods: {
-      goTsetDev(){
-        this.$router.push('/hello')
-      }
+			goTsetDev() {
+				this.$router.push('/hello')
+			}
 		},
 		mounted() {
 
+		},
+		computed:{
+			fullName(){
+				return Number(this.firesName)+Number(this.secondName)
+			}
 		}
 	}
 </script>
 
 <style scoped>
-.dragbox{
-  width: 200px;
-  color: #fff;
-  background: #1991FA;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-}
 </style>
