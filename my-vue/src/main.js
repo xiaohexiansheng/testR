@@ -9,7 +9,8 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.prototype.$axios= axios
 Vue.config.productionTip = false
 Vue.use(ElementUI);
-
+import toast from './components/toast'
+Vue.prototype.$toast = toast
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

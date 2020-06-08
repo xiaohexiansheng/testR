@@ -6,7 +6,7 @@ import hello from '@/components/hello'
 
 Vue.use(Router)
 
-export default new Router({
+ let router=new Router({
   routes: [
     {
       path: '/',
@@ -25,3 +25,4 @@ export default new Router({
     }
   ]
 })
+export default router

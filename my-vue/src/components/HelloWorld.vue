@@ -1,31 +1,27 @@
 <template>
-	<div class="dragbox">
-		<input type="text"v-model="firesName" />
-		<input type="text"v-model="secondName"  />
-		<p>{{fullName}}</p>
-	</div>
+	<div id="demo">
+		11111111111111111111111111
+      <p @click="goTsetDev">go</p>
+   </div>
 </template>
 
 <script>
 	export default {
 		data() {
 			return {
-				firesName:1,
-				secondName:2
 			}
 		},
 		methods: {
 			goTsetDev() {
-				this.$router.push('/hello')
+				this.$toast({ msg: '手机号码不能为空' })
+				//this.$router.push('/hello')
 			}
 		},
 		mounted() {
 
 		},
 		computed:{
-			fullName(){
-				return Number(this.firesName)+Number(this.secondName)
-			}
+			
 		}
 	}
 </script>
