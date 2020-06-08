@@ -1,5 +1,6 @@
 <template>
   <el-select v-model="value" placeholder="请选择23244">
+    <p>11234</p>
     <el-option
       v-for="item in options"
       :key="item.value"
